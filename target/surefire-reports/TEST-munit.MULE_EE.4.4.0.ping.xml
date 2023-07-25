@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="MULE_EE.4.4.0.ping" time="0.0" failures="0" errors="1" skipped="0" tests="1">
+  <properties>
+    <property key="gopherProxySet" value="false"/>
+    <property key="awt.toolkit" value="sun.lwawt.macosx.LWCToolkit"/>
+    <property key="java.specification.version" value="11"/>
+    <property key="sun.cpu.isalist" value=""/>
+    <property key="sun.jnu.encoding" value="UTF-8"/>
+    <property key="java.class.path" value="/Users/diane/Documents/apache-maven-3.8.8/boot/plexus-classworlds-2.6.0.jar"/>
+    <property key="java.vm.vendor" value="Oracle Corporation"/>
+    <property key="sun.arch.data.model" value="64"/>
+    <property key="java.vendor.url" value="https://openjdk.java.net/"/>
+    <property key="user.timezone" value="Europe/Paris"/>
+    <property key="maven.conf" value="/Users/diane/Documents/apache-maven-3.8.8/conf"/>
+    <property key="os.name" value="Mac OS X"/>
+    <property key="java.vm.specification.version" value="11"/>
+    <property key="sun.java.launcher" value="SUN_STANDARD"/>
+    <property key="user.country" value="FR"/>
+    <property key="sun.boot.library.path" value="/Library/Java/JavaVirtualMachines/jdk-11.0.17.jdk/Contents/Home/lib"/>
+    <property key="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher package -nsu -DSkipTests"/>
+    <property key="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property key="jdk.debug" value="release"/>
+    <property key="maven.home" value="/Users/diane/Documents/apache-maven-3.8.8"/>
+    <property key="sun.cpu.endian" value="little"/>
+    <property key="user.home" value="/Users/diane"/>
+    <property key="user.language" value="fr"/>
+    <property key="java.specification.vendor" value="Oracle Corporation"/>
+    <property key="java.version.date" value="2022-10-18"/>
+    <property key="java.home" value="/Library/Java/JavaVirtualMachines/jdk-11.0.17.jdk/Contents/Home"/>
+    <property key="file.separator" value="/"/>
+    <property key="java.vm.compressedOopsMode" value="Zero based"/>
+    <property key="line.separator" value="&#xa;"/>
+    <property key="java.specification.name" value="Java Platform API Specification"/>
+    <property key="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property key="java.awt.graphicsenv" value="sun.awt.CGraphicsEnvironment"/>
+    <property key="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property key="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property key="java.runtime.version" value="11.0.17+10-LTS-269"/>
+    <property key="user.name" value="diane"/>
+    <property key="path.separator" value=":"/>
+    <property key="os.version" value="13.3.1"/>
+    <property key="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property key="file.encoding" value="UTF-8"/>
+    <property key="guice.disable.misplaced.annotation.check" value="true"/>
+    <property key="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property key="java.vendor.version" value="18.9"/>
+    <property key="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/"/>
+    <property key="java.io.tmpdir" value="/var/folders/3y/xx0dkm8s0cv8m34rjtcgptpw0000gp/T/"/>
+    <property key="java.version" value="11.0.17"/>
+    <property key="user.dir" value="/Users/diane/Documents/repo/ping_pong"/>
+    <property key="os.arch" value="aarch64"/>
+    <property key="SkipTests" value="true"/>
+    <property key="maven.multiModuleProjectDirectory" value="/Users/diane/Documents/repo/ping_pong"/>
+    <property key="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property key="java.awt.printerjob" value="sun.lwawt.macosx.CPrinterJob"/>
+    <property key="sun.os.patch.level" value="unknown"/>
+    <property key="java.library.path" value="/Users/diane/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:."/>
+    <property key="java.vendor" value="Oracle Corporation"/>
+    <property key="java.vm.info" value="mixed mode"/>
+    <property key="java.vm.version" value="11.0.17+10-LTS-269"/>
+    <property key="classworlds.conf" value="/Users/diane/Documents/apache-maven-3.8.8/bin/m2.conf"/>
+    <property key="sun.io.unicode.encoding" value="UnicodeBig"/>
+    <property key="library.jansi.path" value="/Users/diane/Documents/apache-maven-3.8.8/lib/jansi-native"/>
+    <property key="java.class.version" value="55.0"/>
+    <property key="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property key="munit.system.properties.file" value="/Users/diane/Documents/repo/ping_pong/target/user.system.properties"/>
+    <property key="org.glassfish.grizzly.DEFAULT_MEMORY_MANAGER" value="org.glassfish.grizzly.memory.HeapMemoryManager"/>
+  </properties>
+  <testcase time="0.0" name="ping.xml" classname="MULE_EE.4.4.0.ping">
+    <error>java.lang.IllegalStateException: Cannot start embedded container
+	at org.mule.runtime.module.embedded.internal.DefaultEmbeddedContainerBuilder$1.start(DefaultEmbeddedContainerBuilder.java:172)
+	at org.mule.munit.remote.container.EmbeddedContainer.start(EmbeddedContainer.java:93)
+	at org.mule.munit.remote.container.ContainerSuiteRunDispatcher.runSuites(ContainerSuiteRunDispatcher.java:144)
+	at org.mule.munit.remote.RemoteRunner.run(RemoteRunner.java:85)
+	at org.mule.munit.remote.RemoteRunner.main(RemoteRunner.java:67)
+Caused by: java.lang.IllegalArgumentException: Could not find embedded container bom artifact
+	at org.mule.runtime.module.embedded.internal.MavenContainerClassLoaderFactory.create(MavenContainerClassLoaderFactory.java:83)
+	at org.mule.runtime.module.embedded.internal.DefaultEmbeddedContainerBuilder$1.start(DefaultEmbeddedContainerBuilder.java:149)
+	... 4 more
+Caused by: org.mule.maven.client.api.BundleDependenciesResolutionException: org.eclipse.aether.resolution.ArtifactDescriptorException: Failed to read artifact descriptor for com.mulesoft.mule.distributions:mule-runtime-impl-bom:pom:4.4.0
+	at org.mule.maven.client.internal.AetherMavenClient.resolveBundleDescriptorDependencies(AetherMavenClient.java:315)
+	at org.mule.maven.client.internal.AetherMavenClient.resolveBundleDescriptorDependencies(AetherMavenClient.java:281)
+	at org.mule.runtime.module.embedded.internal.MavenContainerClassLoaderFactory.create(MavenContainerClassLoaderFactory.java:55)
+	... 5 more
+Caused by: org.eclipse.aether.resolution.ArtifactDescriptorException: Failed to read artifact descriptor for com.mulesoft.mule.distributions:mule-runtime-impl-bom:pom:4.4.0
+	at org.apache.maven.repository.internal.DefaultArtifactDescriptorReader.loadPom(DefaultArtifactDescriptorReader.java:282)
+	at org.apache.maven.repository.internal.DefaultArtifactDescriptorReader.readArtifactDescriptor(DefaultArtifactDescriptorReader.java:198)
+	at org.eclipse.aether.internal.impl.DefaultRepositorySystem.readArtifactDescriptor(DefaultRepositorySystem.java:287)
+	at org.mule.maven.client.internal.AetherMavenClient.resolveBundleDescriptorDependencies(AetherMavenClient.java:293)
+	... 7 more
+Caused by: org.eclipse.aether.resolution.ArtifactResolutionException: Could not transfer artifact com.mulesoft.mule.distributions:mule-runtime-impl-bom:pom:4.4.0 from/to MuleRepository (https://repository.mulesoft.org/nexus-ee/content/repositories/releases-ee/): authorization failed for https://repository.mulesoft.org/nexus-ee/content/repositories/releases-ee/com/mulesoft/mule/distributions/mule-runtime-impl-bom/4.4.0/mule-runtime-impl-bom-4.4.0.pom, status: 403 Forbidden
+	at org.eclipse.aether.internal.impl.DefaultArtifactResolver.resolve(DefaultArtifactResolver.java:444)
+	at org.eclipse.aether.internal.impl.DefaultArtifactResolver.resolveArtifacts(DefaultArtifactResolver.java:246)
+	at org.eclipse.aether.internal.impl.DefaultArtifactResolver.resolveArtifact(DefaultArtifactResolver.java:223)
+	at org.apache.maven.repository.internal.DefaultArtifactDescriptorReader.loadPom(DefaultArtifactDescriptorReader.java:267)
+	... 10 more
+Caused by: org.eclipse.aether.transfer.ArtifactTransferException: Could not transfer artifact com.mulesoft.mule.distributions:mule-runtime-impl-bom:pom:4.4.0 from/to MuleRepository (https://repository.mulesoft.org/nexus-ee/content/repositories/releases-ee/): authorization failed for https://repository.mulesoft.org/nexus-ee/content/repositories/releases-ee/com/mulesoft/mule/distributions/mule-runtime-impl-bom/4.4.0/mule-runtime-impl-bom-4.4.0.pom, status: 403 Forbidden
+	at org.eclipse.aether.connector.basic.ArtifactTransportListener.transferFailed(ArtifactTransportListener.java:43)
+	at org.eclipse.aether.connector.basic.BasicRepositoryConnector$TaskRunner.run(BasicRepositoryConnector.java:355)
+	at org.eclipse.aether.util.concurrency.RunnableErrorForwarder$1.run(RunnableErrorForwarder.java:67)
+	at org.eclipse.aether.connector.basic.BasicRepositoryConnector$DirectExecutor.execute(BasicRepositoryConnector.java:581)
+	at org.eclipse.aether.connector.basic.BasicRepositoryConnector.get(BasicRepositoryConnector.java:249)
+	at org.eclipse.aether.internal.impl.DefaultArtifactResolver.performDownloads(DefaultArtifactResolver.java:520)
+	at org.eclipse.aether.internal.impl.DefaultArtifactResolver.resolve(DefaultArtifactResolver.java:421)
+	... 13 more
+Caused by: org.apache.maven.wagon.authorization.AuthorizationException: authorization failed for https://repository.mulesoft.org/nexus-ee/content/repositories/releases-ee/com/mulesoft/mule/distributions/mule-runtime-impl-bom/4.4.0/mule-runtime-impl-bom-4.4.0.pom, status: 403 Forbidden
+	at org.apache.maven.wagon.shared.http.AbstractHttpClientWagon.fillInputData(AbstractHttpClientWagon.java:1184)
+	at org.apache.maven.wagon.shared.http.AbstractHttpClientWagon.fillInputData(AbstractHttpClientWagon.java:1140)
+	at org.apache.maven.wagon.StreamWagon.getInputStream(StreamWagon.java:126)
+	at org.apache.maven.wagon.StreamWagon.getIfNewer(StreamWagon.java:88)
+	at org.apache.maven.wagon.StreamWagon.get(StreamWagon.java:61)
+	at org.eclipse.aether.transport.wagon.WagonTransporter$GetTaskRunner.run(WagonTransporter.java:560)
+	at org.eclipse.aether.transport.wagon.WagonTransporter.execute(WagonTransporter.java:427)
+	at org.eclipse.aether.transport.wagon.WagonTransporter.get(WagonTransporter.java:404)
+	at org.eclipse.aether.connector.basic.BasicRepositoryConnector$GetTaskRunner.runTask(BasicRepositoryConnector.java:447)
+	at org.eclipse.aether.connector.basic.BasicRepositoryConnector$TaskRunner.run(BasicRepositoryConnector.java:350)
+	... 18 more
+</error>
+  </testcase>
+</testsuite>

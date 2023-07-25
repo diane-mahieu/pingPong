@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>2cbdcd0f-b1a2-423a-b742-ce273a634811</groupId>
+  <artifactId>ping_pong</artifactId>
+  <version>1.0.0</version>
+  <name>ping_pong</name>
+  <properties>
+    <classifier>raml</classifier>
+    <main>ping_pong.raml</main>
+    <status>published</status>
+    <originalFormatVersion>1.0</originalFormatVersion>
+    <apiVersion>v1</apiVersion>
+    <projectId>2ab3f104-22da-45a0-ad8a-9fc2b2d399be</projectId>
+    <branchId>master</branchId>
+    <commitId>69800f189356fef06d2c5fa266fa3450335559be</commitId>
+    <keywords/>
+    <type>rest-api</type>
+    <mainFile>ping_pong.raml</mainFile>
+  </properties>
+  <repositories>
+    <repository>
+      <id>anypoint-exchange</id>
+      <url>https://maven.anypoint.mulesoft.com/api/v3/maven</url>
+    </repository>
+  </repositories>
+</project>

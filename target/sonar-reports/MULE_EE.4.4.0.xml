@@ -1,0 +1,7 @@
+<testExecutions version="1">
+  <file path="src/test/munit/ping.xml"/>
+  <file path="src/test/munit/ping.xml"/>
+  <file path="src/test/munit/ping.xml"/>
+  <file path="src/test/munit/ping.xml"/>
+  <file path="src/test/munit/ping.xml"/>
+</testExecutions>
